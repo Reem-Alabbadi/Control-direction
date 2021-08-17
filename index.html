@@ -109,6 +109,19 @@
 </div>
 <a class="gradient-button gradient-button-1">Save</a><br />
 <a class="gradient-button gradient-button-2">Run </a><br />
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "131ba88e-1a79-4d2b-9783-bb5436949e3a", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "5d8cb7fa-e284-493d-b96a-9a209249ce53", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
  <script src="a.js"></script></div>  
 
 
